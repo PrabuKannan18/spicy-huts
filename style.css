@@ -10,6 +10,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
    width:120%;
    height: auto;
+   font-size: 14px;
 }
 .landing{
     background-image: url('img/img1.jpg');
