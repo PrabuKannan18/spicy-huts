@@ -33,7 +33,7 @@ header{
 }
 nav{
     flex:2;
-    display: flex;
+    display: none;
 }
 nav a{
     flex:1;
@@ -70,10 +70,11 @@ nav a:hover{
     border:1px solid var(--green);
 }
 .menu{
-    display:grid;
+    display:none;
     grid-template-columns: 1fr 1fr 1fr;
     background: linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
    color:var(--white);
+   justify-content: center;
 }
 #one,#two{
     background:linear-gradient(to right,rgb(100,100,100),rgb(53,52,52));
@@ -122,6 +123,17 @@ table{
     flex:1;
     padding:1em;
     
+}
+
+@media only screen and (min-width: 600px) {
+   
+    .maintext {
+        height: 40vh;
+    }
+    nav,
+    .menu {
+        display: flex; 
+    }
 }
 
 
